@@ -1,0 +1,11 @@
+
+# Docker Setup on AWS EC2 Instance
+sudo yum update -y
+sudo yum install docker -y
+sudo curl -L "https://github.com/docker/compose/releases/download/1.28.6/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+docker-compose --version
+mkdir {vault-server,vault-init}
+
+https://www.youtube.com/watch?v=F1KC0khe4SU&list=PLesRB-DxZa8aTqGMk1MIRmR0zzfrCq1ck&index=6
